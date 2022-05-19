@@ -5,7 +5,7 @@ TO RUN:
 ---------
 python most_active_cookies.py <COOKIES CSV FILE> <DATE>
 
-for example: 
+For example: 
 python most_active_cookie.py cookies.csv 2018-12-09
 
 ------------------------------------------------------
