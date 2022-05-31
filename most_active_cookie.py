@@ -1,18 +1,18 @@
 #sys used for reading arguments passed in (file name, date)
 import sys
 
-def getFileName(): #returns array of cookies that match given date
+def getFileName(): 
+    file_name = sys.argv[1]
+    return file_name
+   
+def getLines(file_name):
     try:#Matching file name found
-        file_name = sys.argv[1]
-        return file_name
+        with open(file_name, 'r') as file: 
+                lines = file.readlines() 
+        return lines
     except: #no matching file found
         print('File not found.')
         sys.exit()
-    
-def getLines(file_name):
-    with open(file_name, 'r') as file: 
-            lines = file.readlines() 
-    return lines
 
 def getCookies(lines):
     
