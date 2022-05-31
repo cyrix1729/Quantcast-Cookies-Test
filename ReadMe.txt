@@ -3,7 +3,7 @@ and the latter is the file used for testing.
 
 TO RUN:
 ---------
-python most_active_cookies.py <COOKIES CSV FILE> <DATE>
+python most_active_cookie.py <COOKIES CSV FILE> <DATE>
 
 For example: 
 python most_active_cookie.py cookies.csv 2018-12-09
